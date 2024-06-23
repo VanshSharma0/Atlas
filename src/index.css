@@ -1,0 +1,478 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Navbar */
+.navbar-container {
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    max-width: 6xl;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.navbar-logo {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-logo img {
+    height: 3rem;
+    margin-right: 1rem;
+}
+
+.navbar-menu {
+    display: flex;
+    gap: 1rem;
+}
+
+.navbar-menu a {
+    padding: 1rem;
+    color: #555555;
+    font-weight: 500;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.navbar-menu a:hover {
+    color: #4CAF50;
+}
+
+.navbar-menu a.active {
+    color: #4CAF50;
+    border-bottom: 2px solid #4CAF50;
+}
+
+/* Home Component */
+.home-container {
+    padding: 2rem;
+    text-align: center;
+    margin-top: 80px; /* Adjust as needed to avoid being hidden by the fixed navbar */
+}
+
+.home-title {
+    font-size: 2.5em;
+    color: #4CAF50;
+}
+
+.home-description {
+    font-size: 1.2em;
+    color: #555555;
+}
+
+/* About Component */
+.about-container {
+    padding: 2rem;
+    text-align: center;
+    margin-top: 80px; /* Adjust as needed to avoid being hidden by the fixed navbar */
+}
+
+.about-title {
+    font-size: 2.5em;
+    color: #4CAF50;
+}
+
+.about-description {
+    font-size: 1.2em;
+    color: #555555;
+}
+
+/* Services Component */
+.services-container {
+    padding: 2rem;
+    text-align: center;
+    margin-top: 80px; /* Adjust as needed to avoid being hidden by the fixed navbar */
+}
+
+.services-title {
+    font-size: 2.5em;
+    color: #4CAF50;
+}
+
+.services-description {
+    font-size: 1.2em;
+    color: #555555;
+}
+
+/* Internships Component */
+.internships-container {
+    padding: 2rem;
+    text-align: center;
+    margin-top: 80px; /* Adjust as needed to avoid being hidden by the fixed navbar */
+}
+
+.internships-title {
+    font-size: 2.5em;
+    color: #4CAF50;
+}
+
+.internships-description {
+    font-size: 1.2em;
+    color: #555555;
+}
+
+/* About Us Component */
+.about-us-container {
+    padding: 2rem;
+    text-align: center;
+    margin-top: 80px; /* Adjust as needed to avoid being hidden by the fixed navbar */
+}
+
+.about-us-title {
+    font-size: 2.5em;
+    color: #4CAF50;
+}
+
+.about-us-description {
+    font-size: 1.2em;
+    color: #555555;
+}
+
+/* Contact Component */
+.contact-container {
+    padding: 2rem;
+    text-align: center;
+    margin-top: 80px; /* Adjust as needed to avoid being hidden by the fixed navbar */
+}
+
+.contact-title {
+    font-size: 2.5em;
+    color: #4CAF50;
+}
+
+.contact-description {
+    font-size: 1.2em;
+    color: #555555;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.content {
+    margin-top: 80px; /* Adjust according to Navbar height */
+}
+
+/* Navbar */
+.navbar-container {
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    max-width: 6xl;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.navbar-logo {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-logo img {
+    height: 3rem; /* Adjust the height of the logo */
+    width: auto; /* Maintain aspect ratio */
+    margin-right: 1rem;
+}
+
+.navbar-menu {
+    display: flex;
+    gap: 1rem;
+}
+
+.navbar-menu a {
+    padding: 1rem;
+    color: #555555;
+    font-weight: 500;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.navbar-menu a:hover {
+    color: #4CAF50;
+}
+
+.navbar-menu a.active {
+    color: #4CAF50;
+    border-bottom: 2px solid #4CAF50;
+}
+
+/* Component-specific styles */
+.home-container,
+.about-container,
+.services-container,
+.internships-container,
+.about-us-container,
+.contact-container {
+    padding: 2rem;
+    text-align: center;
+}
+
+.home-title,
+.about-title,
+.services-title,
+.internships-title,
+.about-us-title,
+.contact-title {
+    font-size: 2.5em;
+    color: #4CAF50;
+}
+
+.home-description,
+.about-description,
+.services-description,
+.internships-description,
+.about-us-description,
+.contact-description {
+    font-size: 1.2em;
+    color: #555555;
+}
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Hero section */
+.hero-section {
+    background-color: #f0f0f0;
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.hero-title {
+    font-size: 3rem;
+    color: #cdcdff;
+    margin-bottom: 1.5rem;
+}
+
+.hero-description {
+    font-size: 1.5rem;
+    color: #666;
+    margin-bottom: 2rem;
+}
+
+.btn-primary {
+    display: inline-block;
+    background-color: #4CAF50;
+    color: #fff;
+    font-size: 1.2rem;
+    text-decoration: none;
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #45a049;
+}
+
+/* Services section */
+.services-section {
+    padding: 4rem 0;
+    background-color: #fff;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 2rem;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    justify-items: center;
+}
+
+.service-card {
+    background-color: #f9f9f9;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+}
+
+.service-icon {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 1rem;
+}
+
+.service-title {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.service-description {
+    font-size: 1.2rem;
+    color: #666;
+}
+
+/* About section */
+.about-section {
+    padding: 4rem 0;
+    background-color: #f0f0f0;
+    text-align: center;
+}
+
+.about-description {
+    font-size: 1.5rem;
+    color: #666;
+    margin-bottom: 2rem;
+}
+
+.btn-secondary {
+    display: inline-block;
+    background-color: #333;
+    color: #fff;
+    font-size: 1.2rem;
+    text-decoration: none;
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+    transition: background-color 0.3s ease;
+}
+
+.btn-secondary:hover {
+    background-color: #555;
+}
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('./assets/1.jpg'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Hero section */
+.hero-section {
+    background-color: rgba(0, 0, 0, 0.6); /* Add a semi-transparent overlay for better contrast */
+    padding: 4rem 0;
+    text-align: center;
+    color: #fff; /* Set text color to white for better readability */
+}
+
+.hero-title {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+.hero-description {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.btn-primary {
+    display: inline-block;
+    background-color: #4CAF50;
+    color: #fff;
+    font-size: 1.2rem;
+    text-decoration: none;
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #45a049;
+}
+
+/* Services section */
+.services-section {
+    padding: 4rem 0;
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+    text-align: center;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 2rem;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    justify-items: center;
+}
+
+.service-card {
+    background-color: #f9f9f9;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+}
+
+.service-icon {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 1rem;
+}
+
+.service-title {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.service-description {
+    font-size: 1.2rem;
+    color: #666;
+}
+
+/* About section */
+.about-section {
+    padding: 4rem 0;
+    background-color: rgba(240, 240, 240, 0.9); /* Semi-transparent light gray background */
+    text-align: center;
+}
+
+.about-description {
+    font-size: 1.5rem;
+    color: #666;
+    margin-bottom: 2rem;
+}
+
+.btn-secondary {
+    display: inline-block;
+    background-color: #333;
+    color: #fff;
+    font-size: 1.2rem;
+    text-decoration: none;
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+    transition: background-color 0.3s ease;
+}
+
+.btn-secondary:hover {
+    background-color: #555;
+}
