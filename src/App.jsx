@@ -7,6 +7,7 @@ import Services from './components/Services';
 import Internships from './components/Internships';
 import AboutUs from './components/AboutUs';
 import Contact from './components/Contact';
+import Footer from './components/Footer';
 import './App.css'; // Import global styles
 
 const App = () => {
@@ -21,8 +22,10 @@ const App = () => {
                     <Route path="/internships" element={<Internships />} />
                     <Route path="/about-us" element={<AboutUs />} />
                     <Route path="/contact" element={<Contact />} />
+                    <Route path="/Footer" element={<Footer />}/>
                 </Routes>
             </div>
+            <Footer/>
         </Router>
     );
 };
