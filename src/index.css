@@ -2,57 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Navbar */
-.navbar-container {
-    background-color: #ffffff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 10;
-    max-width: 6xl;
-    margin: 0 auto;
-    padding: 0 1rem;
-}
-
-.navbar-logo {
-    display: flex;
-    align-items: center;
-}
-
-.navbar-logo img {
-    height: 3rem;
-    margin-right: 1rem;
-}
-
-.navbar-menu {
-    display: flex;
-    gap: 1rem;
-}
-
-.navbar-menu a {
-    padding: 1rem;
-    color: #555555;
-    font-weight: 500;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-.navbar-menu a:hover {
-    color: #4CAF50;
-}
-
-.navbar-menu a.active {
-    color: #4CAF50;
-    border-bottom: 2px solid #4CAF50;
-}
-
 /* Home Component */
 .home-container {
     padding: 2rem;
     text-align: center;
-    margin-top: 80px; /* Adjust as needed to avoid being hidden by the fixed navbar */
+    padding: 20px;
 }
 
 .home-title {
@@ -77,26 +31,11 @@
     color: #4CAF50;
 }
 
-.about-description {
-    font-size: 1.2em;
-    color: #555555;
-}
-
 /* Services Component */
 .services-container {
     padding: 2rem;
     text-align: center;
     margin-top: 80px; /* Adjust as needed to avoid being hidden by the fixed navbar */
-}
-
-.services-title {
-    font-size: 2.5em;
-    color: #4CAF50;
-}
-
-.services-description {
-    font-size: 1.2em;
-    color: #555555;
 }
 
 /* Internships Component */
@@ -116,36 +55,6 @@
     color: #555555;
 }
 
-/* About Us Component */
-.about-us-container {
-    padding: 2rem;
-    text-align: center;
-    margin-top: 80px; /* Adjust as needed to avoid being hidden by the fixed navbar */
-}
-
-.about-us-title {
-    font-size: 2.5em;
-    color: #4CAF50;
-    margin-bottom: 30px;
-}
-
-/* .about-us-content{
-    font-size: 2rem;
-} */
-
-/* 
-.about-us-description {
-    font-size: 1.2em;
-    color: #555555;
-} */
-
-/* Contact Component */
-.contact-container {
-    padding: 2rem;
-    text-align: center;
-    margin-top: 80px; /* Adjust as needed to avoid being hidden by the fixed navbar */
-}
-
 .contact-title {
     font-size: 2.5em;
     color: #4CAF50;
@@ -154,12 +63,6 @@
 .contact-description {
     font-size: 1.2em;
     color: #555555;
-}
-
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
 }
 
 .content {
@@ -213,20 +116,6 @@ body {
     border-bottom: 2px solid #4CAF50;
 }
 
-/* Global styles */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
-
-/* Hero section */
-.hero-section {
-    background-color: #f0f0f0;
-    padding: 4rem 0;
-    text-align: center;
-}
-
 .hero-title {
     font-size: 2.7rem;
     color: #cdcdff;
@@ -236,83 +125,6 @@ body {
 .hero-description {
     font-size: 1.8rem;
     color: #ff9239;
-    margin-bottom: 2rem;
-}
-
-.btn-primary {
-    display: inline-block;
-    background-color: #4CAF50;
-    color: #fff;
-    font-size: 1.2rem;
-    text-decoration: none;
-    padding: 1rem 2rem;
-    border-radius: 0.5rem;
-    transition: background-color 0.3s ease;
-}
-
-.btn-primary:hover {
-    background-color: #45a049;
-}
-
-/* Services section */
-.services-section {
-    padding: 4rem 0;
-    background-color: #fff;
-    text-align: center;
-}
-
-.section-title {
-    font-size: 2.5rem;
-    color: #333;
-    margin-bottom: 2rem;
-}
-
-.services-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-    justify-items: center;
-}
-
-.service-card {
-    background-color: #f9f9f9;
-    padding: 2rem;
-    border-radius: 0.5rem;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-}
-
-.service-card:hover {
-    transform: translateY(-5px);
-}
-
-.service-icon {
-    width: 80px;
-    height: 80px;
-    margin-bottom: 1rem;
-}
-
-.service-title {
-    font-size: 1.5rem;
-    color: #333;
-    margin-bottom: 1rem;
-}
-
-.service-description {
-    font-size: 1.2rem;
-    color: #666;
-}
-
-/* About section */
-.about-section {
-    padding: 4rem 0;
-    background-color: #f0f0f0;
-    text-align: center;
-}
-
-.about-description {
-    font-size: 1.5rem;
-    color: #666;
     margin-bottom: 2rem;
 }
 
@@ -339,7 +151,8 @@ body {
     background-image: url('./assets/1.jpg'); /* Replace with your image path */
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
+    /* background-repeat: no-repeat; */
+    background-repeat:repeat;
 }
 
 /* Hero section */
@@ -372,12 +185,6 @@ body {
     text-align: center;
 }
 
-.section-title {
-    font-size: 2.5rem;
-    color: #333;
-    margin-bottom: 2rem;
-}
-
 .services-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -391,10 +198,11 @@ body {
     border-radius: 0.5rem;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
-}
+}   
 
 .service-card:hover {
-    transform: translateY(-5px);
+    transform: translateY(7px);
+    background-color: #c5c5c5;
 }
 
 .service-icon {
@@ -427,21 +235,6 @@ body {
     margin-bottom: 2rem;
 }
 
-.btn-secondary {
-    display: inline-block;
-    background-color: #333;
-    color: #fff;
-    font-size: 1.2rem;
-    text-decoration: none;
-    padding: 1rem 2rem;
-    border-radius: 0.5rem;
-    transition: background-color 0.3s ease;
-}
-
-.btn-secondary:hover {
-    background-color: #555;
-}
-
 /* App.css */
 
 html, body, #root {
@@ -452,10 +245,6 @@ html, body, #root {
 
 footer {
     width: 100%;
-}
-
-.home-container {
-    margin-left: 90px;
 }
 
 /* Small devices (landscape phones, 576px and up) */
@@ -485,3 +274,94 @@ footer {
         margin-left: 60px;
     }
 }
+
+.section-title{
+    font-size: 35px;
+    margin: 12px;
+}
+
+ /* ~ ABOUT ~ */
+.about-us-container {
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    margin: auto;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    max-width: 800px;
+    text-align: center;
+}
+
+.about-us-title {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+    border-bottom: 2px solid #ff6347;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+.about-us-content h1.text-4xl {
+    font-size: 1.65em;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.about-us-content h2 {
+    font-size: 1.8rem;
+    text-decoration: underline #ff6347;
+    margin-bottom: 20px;
+    padding-bottom: 3px;
+    margin-top: 30px;
+    color: #000000;
+}
+
+.about-us-content p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    line-height: 1.6;
+    color: #666;
+}
+
+.about-us-content ul {
+    text-align: left;
+    list-style-type: disc;
+    margin: 0 auto 20px auto;
+    padding: 0;
+    max-width: 700px;
+    font-size: 1.3rem;
+    /* margin: 200px; */
+}
+
+.about-us-content ul li {
+    margin-bottom: 10px;
+    color: #444;
+}
+
+.about-us-content ul li strong {
+    color: #00a1b6;
+}
+
+@media (max-width: 600px) {
+    .about-us-container {
+        padding: 20px;
+    }
+
+    .about-us-title {
+        font-size: 2em;
+    }
+
+    .about-us-content h1.text-4xl {
+        font-size: 1.5em;
+    }
+
+    .about-us-content h2 {
+        font-size: 1.25em;
+    }
+
+    .about-us-content p {
+        font-size: 1em;
+    }
+}
+
