@@ -9,6 +9,7 @@ import AboutUs from './components/AboutUs';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import './App.css'; // Import global styles
+import { useState } from 'react';
 
 const App = () => {
     return (
